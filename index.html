@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartes de Formateurs</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <img src="images/logo.png" alt="Logo" id="logo">
+  <h1>CARTES DE FORMATEURS</h1>
+
+  <div class="controls-global">
+    <input type="text" id="searchInput" placeholder="Rechercher un nom. Faire Entrée pour valider">
+    <button class="showAllCardsBtn">Afficher toutes les cartes</button>
+    <div id="searchMessage" style="margin-top:5px; font-weight:bold; color:#333;"></div>
+    <button class="btn download" id="downloadAllPDF">Télécharger toutes les cartes en PDF</button>
+  </div>
+
+  <div id="cardsContainer"></div>
+
+  <div class="controls-global" style="margin-top:20px;">
+    <button class="showAllCardsBtn">Afficher toutes les cartes</button>
+  </div>
+
+  <!-- Modal QR Code -->
+  <div id="qrModal">
+    <span id="qrModalClose">&times;</span>
+    <img id="qrModalImg" src="" alt="QR Code">
+    <div id="qrModalName"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
